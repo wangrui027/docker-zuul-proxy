@@ -27,7 +27,7 @@ CMD java -jar docker-zuul-proxy-1.0.0.jar
 1、默认代理google：
 
 ```bash
-docker run -dP zuul-proxy
+docker run -dP wangrui027/zuul-proxy
 ```
 
 取得容器的8080端口对外映射的宿主端口，访问`http://ip:port`则实现google代理访问
@@ -37,7 +37,7 @@ docker run -dP zuul-proxy
 2、指定代理的网址（以baidu为例）：
 
 ```bash
-docker run -dP -e proxy.url=https://www.baidu.com zuul-proxy
+docker run -dP -e proxy.url=https://www.baidu.com wangrui027/zuul-proxy
 ```
 
 取得容器的8080端口对外映射的宿主端口，访问`http://ip:port`则实现baidu代理访问
